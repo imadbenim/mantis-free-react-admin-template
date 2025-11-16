@@ -10,17 +10,29 @@ This document describes the comprehensive component documentation created for th
 
 ```
 docs/
-└── components/
-    ├── README.md                    # Component documentation index
-    ├── MainCard.md                  # Core card wrapper component
-    ├── AnimateButton.md             # Framer Motion animation wrapper
-    ├── Avatar.md                    # Enhanced avatar component
-    ├── Breadcrumbs.md              # Intelligent navigation breadcrumbs
-    ├── Dot.md                      # Status indicator component
-    ├── IconButton.md               # Enhanced icon button
-    ├── Transitions.md              # Material-UI transition wrapper
-    ├── AnalyticEcommerce.md        # Analytics statistics card
-    └── AuthFooter.md               # Authentication page footer
+├── components/
+│   ├── README.md                    # Component documentation index
+│   ├── MainCard.md                  # Core card wrapper component
+│   ├── AnimateButton.md             # Framer Motion animation wrapper
+│   ├── Avatar.md                    # Enhanced avatar component
+│   ├── Breadcrumbs.md              # Intelligent navigation breadcrumbs
+│   ├── Dot.md                      # Status indicator component
+│   ├── IconButton.md               # Enhanced icon button
+│   ├── Transitions.md              # Material-UI transition wrapper
+│   ├── AnalyticEcommerce.md        # Analytics statistics card
+│   └── AuthFooter.md               # Authentication page footer
+│
+└── calendar-app/                    # NPO Calendar Application Documentation
+    ├── README.md                    # Project overview and quick start
+    ├── requirements.md              # Functional & non-functional requirements
+    ├── user-roles.md                # User roles and permissions matrix
+    ├── data-model.md                # Supabase database schema
+    ├── api-design.md                # API design and RLS policies
+    ├── ui-ux-specs.md              # UI/UX specifications and flows
+    ├── components.md                # Component breakdown and usage
+    ├── pages.md                     # Page structure and routing
+    ├── implementation-plan.md       # Phased implementation roadmap
+    └── testing-plan.md              # Testing strategy and test cases
 ```
 
 ### Components Documented
@@ -41,6 +53,60 @@ docs/
 2. **AuthFooter** - Footer for authentication pages
 
 ### Total: 9 Components Fully Documented
+
+## NPO Calendar Application
+
+### Project Overview
+
+A comprehensive calendar sharing application designed for Non-Profit Organizations (NPOs) that enables teams to coordinate events with multi-level access control. Built using the Mantis design system with Supabase as the backend.
+
+### Key Features
+
+- **Four-Tier Access Control**: Public Viewer, Member, Manager, Administrator
+- **Multi-View Calendar**: Month, Week, Day, and List views
+- **Event Management**: Full CRUD operations with recurring event support
+- **Configurable Categories**: Admin-defined event categories
+- **Mobile-First Design**: Fully responsive with touch-friendly interface
+- **Public Calendar**: Separate public-facing view for community engagement
+- **Real-time Updates**: Live synchronization via Supabase
+
+### Technology Stack
+
+- **Frontend**: React 19.2.0, Material-UI v7.3.4, Mantis v4.0.0
+- **Backend**: Supabase (PostgreSQL, Auth, Storage, Real-time)
+- **Build Tool**: Vite
+- **State Management**: React Context/Hooks
+- **Date Handling**: date-fns or Day.js
+
+### Documentation Contents
+
+1. **README.md** - Project overview, features, tech stack, quick start guide
+2. **requirements.md** - Detailed functional and non-functional requirements
+3. **user-roles.md** - Complete permissions matrix for all four user roles
+4. **data-model.md** - Supabase database schema with tables, relationships, and migrations
+5. **api-design.md** - Supabase client setup, RLS policies, service layer, and hooks
+6. **ui-ux-specs.md** - UI specifications, wireframes, user flows, and responsive design
+7. **components.md** - Breakdown of 11 new components and 8 reused Mantis components
+8. **pages.md** - Page structure, routing configuration, and navigation
+9. **implementation-plan.md** - 10-12 week phased implementation roadmap
+10. **testing-plan.md** - Comprehensive testing strategy with unit, integration, and E2E tests
+
+### Quick Start for Developers
+
+To begin implementing the calendar app:
+
+1. Review `/docs/calendar-app/README.md` for project overview
+2. Study `/docs/calendar-app/requirements.md` for complete feature specifications
+3. Set up Supabase following `/docs/calendar-app/data-model.md` and `/docs/calendar-app/api-design.md`
+4. Follow the phased approach in `/docs/calendar-app/implementation-plan.md`
+5. Reference `/docs/calendar-app/components.md` for component implementation details
+
+### Implementation Status
+
+- **Planning**: ✅ Complete
+- **Documentation**: ✅ Complete
+- **Implementation**: 🔜 Ready to begin
+- **Estimated Timeline**: 10-12 weeks (single developer)
 
 ## Documentation Standards
 
@@ -372,6 +438,9 @@ For questions about this documentation:
 ---
 
 **Documentation Created:** November 2025
-**Documentation Version:** 1.0.0
+**Documentation Version:** 2.0.0
 **Template Version:** 4.0.0
-**Status:** Initial component documentation complete
+
+**Status**:
+- ✅ Component Documentation: 9 components fully documented
+- ✅ Calendar App Documentation: Complete specifications, ready for implementation
